@@ -38,10 +38,10 @@ This project started as a personal challenge to create a clean, modern UI with d
 ## 🖼 Interface Preview
 
 **Dashboard View:**  
-![Main Layout](demo/project-layout.jpg)
+![Main Layout](demo/project-layout.png)
 
 **Modal Preview:**  
-![Modal](demo/project-modal.jpg)
+![Modal](demo/project-modal.png)
 
 ---
 
