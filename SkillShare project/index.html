@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillShareHub</title>
+  <link rel="stylesheet" href="styles/style.css">
+  
+</head>
+<body>
+
+  <header>
+    <h1>SkillShareHub</h1>
+    <p>Learn. Share. Grow.</p>
+    
+  </header>
+
+  <nav>
+    <div class="filter-controls">
+      <input type="text" id="searchinput" placeholder="Search lessons...">
+      <div class="filter-buttons">
+        <button onclick="filterLessons('all')">All</button>
+        <button onclick="filterLessons('started')">Started</button>
+          <button onclick="filterLessons('completed')">Completed</button>
+    <!-- 🟢 Add this inside .filter-buttons -->
+<button onclick="filterLessons('favorites')">Favorites</button>
+
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div id="lesson-container"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="lessonModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close-btn">&times;</span>
+      <img id="modalImage" src="assets/images/html-course.png" alt="Lesson Image" />
+      <h2 id="modalTitle">Lesson Title</h2>
+      <p id="modalDesc">Lesson Description</p>
+      <div class="modal-buttons">
+        <button id="modalstartbtn">Start Lesson</button>
+        <button id="modalcompletebtn">Mark as Complete</button>
+      </div>
+    </div>
+  </div>
+  <section id="progress-section">
+    <h3>Lesson Progress</h3>
+    <div id="progress-info">
+        <p>Total Lessons:<span id="total-count">0</span></p>
+        <p>Started:<span id="started-count">0</span></p>
+        <p>completed:<span id="completed-count">0</span></p>
+    
+    <div class="progress-bar">
+        <div id="progress-fill"></div>
+    </div>
+    </div>
+
+  </section>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

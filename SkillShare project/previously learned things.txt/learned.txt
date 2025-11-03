@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillShareHub</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header><h1>SkillShareHub</h1>
+<p>Learn. Share. Grow.</p></header>
+
+<main>
+    
+    <section class="lesson-card">
+      <img src="assets/images/html-course.png" alt="Html course">
+      <h2>HTML Basics</h2>
+        <p> Lear how to structure webpage using HTML5.</p>
+        <button>Start Lesson</button>
+    </section>
+    
+</main>
+<script src="scripts/main.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+/*//select the start lesoon from the page
+const startbutton=document.querySelector(`.lesson-card button`);
+
+//attach a click event to the button
+startbutton.addEventListener('click',()=>{
+    //show a message
+    alert("Lesson Started:HTML Basics");
+
+    //store progress in browser's localstorage
+    localStorage.setItem("lesson_started","HTML Basics");
+
+    //console log 
+    console.log("Lesson Started and saved to localStorage.")
+});*/
+
+
+
+
+
+
+
+
+//all lessons stored as an array of objects
+const lessons=[
+    {
+        title:"HTML Basics",
+        description:"Learn how to structure a webpage using HTML5",
+        image:"assets/images/html-course.png"
+    },
+    {
+        title:" CSS Flexbox",
+        description:"Master modern layout with Flexbox",
+        image:"assets/images/html-course.png"
+    },
+    {
+        title:" JavaScript Essentials",
+        description:"Understand JS from basics to DOM",
+        image:"assets/images/html-course.png"
+    },
+    
+];
+
+//target the lessons container
+const lessoncontainer=document.getElementById("lesson-container");
+
+//render each lessson card dynamically
+lessons.forEach(lesson=>{
+    const lessoncard=document.createElement("section");
+    lessoncard.className="lesson-card";
+
+  lessoncard.innerHTML=`
+  <img src="${lesson.image}" alt="${lesson.title}">
+  <h2>${lesson.title}</h2>
+  <p>${lesson.description}</p>
+  <button onclick="startLesson('${lesson.title}')">Start Lesson</button>
+
+  `;
+
+  lessoncontainer.append(lessoncard);
+
+});
+
+//funvtion to handle lesson start
+function startLesson(title){
+    alert(`Lesson Started:${title}`);
+    localStorage.setItem("lesson_starded",title);
+    console.log("lesson saved:",title);
+}

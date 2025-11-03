@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+header p{
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/*MAIN SECION TO CENTER EVERYTHING*/
+main{
+    display: flex;
+    justify-content: center;
+}
+
+/* sstyling the lesson card*/
+.lesson-card{
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 12px;
+ width: 300px;   
+ box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+ text-align: center;
+ transition: all 0.3s ease;
+ position: relative;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+header p{
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/*MAIN SECION TO CENTER EVERYTHING*/
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* course tubmnail*/
+.lesson-card img{
+    width: 100%;
+    border-radius: 8px;margin-bottom: 15px;
+}
+
+/*course title*/
+.lesson-card h2{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+/* description*/
+.lesson-card p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+
+}
+
+/* cta button*/
+.lesson-card button{
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border:none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lesson-card button:hover{
+    
+    background-color: #1e8449;
+    box-shadow: 00 2px 6px rgba(0,0,0,0.2);
+}
+
+
+/*started badge styling*/
+.badge{
+display: inline-block;
+background-color: #27ae60;
+color: white;
+font-size: 0.75rem;
+border-radius: 20px;
+margin-bottom: 10px;
+}
+
+
+/* Lesson container grid styling*/
+#lesson-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px ,1fr));
+    gap:30px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+@media screen and (max-width:600px){
+    #lesson-container{
+        grid-template-columns:1fr;
+    }
+    
+}
+
+/*started badge styling*/
+.badge{
+display: inline-block;
+color: white;
+font-size: 0.75rem;
+border-radius: 20px;
+margin-bottom: 10px;
+}
+
+
+/*styling for badges*/
+.badges{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.badge.started{
+    background-color: #3498db;
+}
+
+.badge.completed{
+    background-color: #27ae60;
+}
+#completedbtn{
+    margin-top: 10px;
+
+}
+/* course tubmnail*/
+.lesson-card img{
+    width: 100%;
+    border-radius: 8px;margin-bottom: 15px;
+}
+
+/*course title*/
+.lesson-card h2{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+/* description*/
+.lesson-card p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+
+}
+
+/* cta button*/
+.lesson-card button{
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border:none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.lesson-card button:hover{
+    
+    background-color: #1e8449;
+    box-shadow: 00 2px 6px rgba(0,0,0,0.2);
+}
+
+
+/*started badge styling*/
+.badge{
+display: inline-block;
+background-color: #27ae60;
+color: white;
+font-size: 0.75rem;
+border-radius: 20px;
+margin-bottom: 10px;
+}
+
+
+/* Lesson container grid styling*/
+#lesson-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px ,1fr));
+    gap:30px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+@media screen and (max-width:600px){
+    #lesson-container{
+        grid-template-columns:1fr;
+    }
+    
+}
+
+/*started badge styling*/
+.badge{
+display: inline-block;
+color: white;
+font-size: 0.75rem;
+border-radius: 20px;
+margin-bottom: 10px;
+}
+
+
+/*styling for badges*/
+.badges{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.badge.started{
+    background-color: #3498db;
+}
+
+.badge.completed{
+    background-color: #27ae60;
+}
+#completedbtn{
+    margin-top: 10px;
+
+}
+
+
+/* Style for each lesson card */
+.lesson-card {
+  background-color: white;               /* Default background */
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+
+
+.lesson-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  transform: scale(1);
+}
+
+.lesson-card:hover {
+  background-color: #219150;
+  transform: scale(1.03);
+  color: #fff;
+}
+
+.lesson-card:hover h2,
+.lesson-card:hover p {
+  color: #fff;
+}
+
+.lesson-card:hover .badge {
+  filter: brightness(110%);
+}
+
+.lesson-card:hover button {
+  background-color: #fff;
+  color: #219150;
+  font-weight: bold;
+}
+
+
+/*imporve the badge styling */
+.badge{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    color: white;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+
+
+}
+
+.badge.started{
+    background-color: #3498db;
+}
+
+.badge.completed{
+    background-color: #2ecc71;
+}
+
+
+
+.filter-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#searchinput{
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #219150;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.filter-buttons button{
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #eee;
+    color:#333;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.filter-buttons button:hover{
+    background-color: #219150;
+    color: white;
+}
+
+#startbtn{
+    margin:auto;
+}
+
+/* modal preview*/
+.modal{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal.hidden{
+    display: none;
+}
+
+.modal-content{
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-content img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+
+}
+
+.close-btn{
+    position:absolute;
+    top: 15px;
+    right: 20px;
+  font-size: 24px;
+  cursor: pointer;   
+}
+
+.modal-buttons button{
+    margin:10px 5px;
+    padding: 8px 12px;
+}
+
+
+#modalstartbtn{
+ padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border:none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+
+#modalcompletebtn{
+ padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border:none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+
+#progress-section{
+    width:50%;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 3em;
+
+    margin-top: 3em;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+#progress-info{
+    margin: 0.5em 0;
+}
+
+.progress-bar{
+    width: 100%;
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow:hidden;
+}
+
+#progress-fill{
+    height: 100%;
+    width: 0%;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+}
+@media screen and (max-width:600px){
+    #progress-section{
+        grid-template-columns:1fr;
+        width: auto;
+    }
+    
+}
+
+
