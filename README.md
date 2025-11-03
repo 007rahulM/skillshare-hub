@@ -39,9 +39,11 @@ This project started as a personal challenge to create a clean, modern UI with d
 
 **Dashboard View:**  
 ![Main Layout](demo/project-layout.png)
+![Modal](demo/project-layout2.png)
 
-**Modal Preview:**  
+**Images:**  
 ![Modal](demo/project-modal.png)
+![Modal](demo/project-preview.png)
 
 ---
 
