@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderLessons();
   };
   
-  // --- Core Functions ---
+  // --- Core Functions --
 
   function startLesson(title) {
     // Find the specific lesson object from our array that matches the title.
