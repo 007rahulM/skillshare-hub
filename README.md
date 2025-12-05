@@ -64,7 +64,7 @@ This project helped reinforce concepts like:
 
 ## 🙌 Credits
 
-Crafted with ❤️ by **Rahul**  
+Crafted with  by **Rahul**  
 Feel free to fork, star ⭐, or drop suggestions!
 
 ---
